@@ -6,3 +6,6 @@ scipy==1.14.1
 plotly
 PyPDF2
 python-docx
+python-pptx
+beautifulsoup4
+requests

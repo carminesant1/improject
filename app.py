@@ -369,14 +369,14 @@ if st.button("Find EU Calls"):
       return BeautifulSoup(raw_html, "html.parser").get_text(strip=True)
 
   def convert_json_url_to_web(url):
-      if not url.endswith(".json"):
-          raise ValueError("L'URL deve terminare con '.json'")
-      topic_id = url.split("/")[-1].replace(".json", "")
-      topic_id_lower = topic_id.lower()
-      return (
-          "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/"
-          f"opportunities/topic-details/{topic_id_lower}"
-      )
+    if not url.endswith(".json"):
+        pass
+        #raise ValueError("L'URL deve terminare con '.json'")
+    topic_id = url.split("/")[-1].replace(".json", "")
+    topic_id_lower = topic_id.lower()
+    return (
+        "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/"
+        f"opportunities/topic-details/{topic_id_lower}")
 
   # === Scarica risultati ===
   page = 1
